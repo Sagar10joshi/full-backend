@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    background-color: rgb(241, 107, 40);
+}
+
+#last{
+    display: flex;
+    position: absolute;
+    left: 70vw;
+    color: blueviolet;
+}
+
+body{
+    background-color: black;
+}
+.big1{
+    display: flex;
+    background-color: rgb(241, 107, 40);
+}
+ul{
+    display: flex;
+    margin-top: 1.5vh;
+}
+
+ul a{
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+ul li:hover{
+    background-color: bisque;
+    border-radius: 14px;
+    color: black;
+}
+
+ul li{
+    margin-left: 2.6vw;
+    list-style: none;
+    color: aqua;
+    padding: 4px;
+}
+
+.logo img{
+    height: 60px;
+    margin: 3px 6px;
+}
+
+.search input[type=text]{
+    border-radius: 10px;
+    height: 4vh;
+    width: 17vw;
+    position: absolute;
+    left: 80vw;
+    top: 1.6vh;
+}
+
+.menu{
+    font-family: Agbalumo;
+    color: beige;
+    font-size: 3vh;
+}
+
+.box2{
+    color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5vh;
+}
+
+.box3{
+    color: aliceblue;
+}
+
+.bigbox1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.small1 img{
+    height: 45vh;
+    border-radius: 16px;
+}
+
+.small2{
+    color: white;
+}
+
+.body2{
+    background-color: rgb(49, 47, 47);
+}
+
+.fullMenu a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.fullMenu h2{
+    font-size: 1.8rem;
+}
+
+h3{
+    color: rgb(0, 255, 81);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.feedback{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feed img{
+    height: 18vh;
+}
+
+.back{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    margin-top: 2vh;
+    margin-left: 12vw;
+}
+
+footer{
+    color: white;
+    background-color: rgb(90, 89, 89);
+}
