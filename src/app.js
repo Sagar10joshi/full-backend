@@ -4,7 +4,6 @@ import { sendOtp } from "./mail.js";
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import session from "express-session"
-//import bodyParser from "bodyparser"
 import { Register } from "./models/register_model.js";
 import dotenv from "dotenv"
 dotenv.config({
@@ -94,7 +93,24 @@ app.post('/otp',async(req,res)=>{
 })
 
 
+app.post('/login',async(req,res)=>{
+    try {
+        const Username = req.body.username
+        const Password = req.body.password
 
+        const userlogin = await Register.findOne({username:Username})
+
+        if(userlogin.password===Password && userlogin.username===Username){
+            res.sendFile(join(__dirname, '../views', 'index.html'));
+        }
+        else{
+            res.send('Invalid Username or Password');
+        }
+
+    } catch (error) {
+        res.status(500).send('User cannot be logged , invalid credientials');
+    }
+})
 
 
 

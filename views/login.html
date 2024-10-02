@@ -75,8 +75,7 @@
 <body>
     <div class="container">
         <h1>Log In</h1>
-        <form id="loginform">
-            <form action="/login" method="post">
+            <form action="/login" method="post" id="loginform">
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" required>
@@ -88,7 +87,6 @@
                 </div>
                 <button type="submit">Login</button>
             </form>
-        </form>
         <div id="error-message" style="color:red;"></div>
     </div>
 
